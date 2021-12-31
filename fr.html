@@ -1,0 +1,152 @@
+
+  <div id="content">
+      
+      <section id="about">
+        <h1>à propos</h1>
+        <p> Mont Tremblant est un très vaste espace vert qui contient de plusieurs lacs et ruisseaux, parfait pour faire du kayak! Vous allez tomber amoureux de son côté sauvage, vous pourriez même y voir un loup qui flâne dans les montagnes. Si vous aimez l'escalade et la randonnée, c'est le meilleur endroit pour le faire. Mont Tremblant est le plus grand et le plus vieux parc du Québec. Heureusement pour vous, le parc est ouvert à l'année longue, alors préparez vos skis et vos planches à neige pour cet hiver. Des sentiers sont disponibles pour qui est intéressés à faire de la raquette.</p>
+      </section>
+      
+      <section id="activities">
+        <h1>Activités</h1>
+        <div class="activty-container">
+          <div class="bike-container">
+                <div class="bike"><img src="images/bike.jpg" alt=""></div>
+                <div class="bike-content">
+                         <button class="accordion">Cyclisme</button>
+                            <div class="accordion-content">
+                              <p>
+                                Nos chemins pour vélo offrent une vue splendide, où vous pouvez admirer le merveilleux paysage paisiblement. Envie de prendre une longue route? Nos sentiers peuvent s'étendre jusqu'à 124 km. Vous êtes libres de prendre une pause sur le côté de la route et prenez plaisir à écouter les oiseaux chanter. Le son de la nature vous ramenera au parc en si peu temps!
+
+                              </p>
+                            </div>
+                        </div>
+                        <div class="kayak"><img src="images/wild.jpg" alt=""></div>
+                <div class="kayak-content">
+                        <button class="accordion">Observation de la faune</button>
+                            <div class="accordion-content">
+                              <p>
+                                Mont Tremblant est un endroit fantastique pour faire de l'observation de la faune. Nous gardons notre parc sécuritaire, propre et il est naturellement accueillant pour plusieurs animaux. Nous avons aménagé un espace pour ceux qui s'intéresse aux oiseaux, aux loups et d'autres créatures adorables qui fournit des jumelles, une zone pour manger et des douillettes dans le cas où vous visitez durant des soirées frisquettes. La fin de semaine, nous avons un expert qui nous parle des animaux que vous pouvez repérer à Mont-Tremblant.
+                              </p>
+                            </div>
+                </div>
+              </div>
+
+              <div class="kayak-container">
+                <div class="kayak"><img src="images/kayak.jpg" alt=""></div>
+                <div class="kayak-content">
+                        <button class="accordion">Kayak</button>
+                            <div class="accordion-content">
+                              <p>
+                                Venez explorez nos rivières et ruisseaux en faisant du kayak à Mont Tremblant. Les vestes de sauvatages sont fournies, tel que le reste de l'équipement. Nous faisons en sorte que nos eaux restent propres et nos gens en sécurité. Vous avez le choix de faire du kayak seul ou en équipe!
+                              </p>
+                            </div>
+                </div>
+
+                <div class="kayak"><img src="images/hiking-2.jpg" alt=""></div>
+                <div class="kayak-content">
+                        <button class="accordion">Randonnée</button>
+                            <div class="accordion-content">
+                              <p>
+                                La randonnée est une activité géniale à faire seul ou en groupe. Il y en a des plus longs comme des plus courts, vous décidez. Soyez certains d'avoir de bonnes espadrilles pour rester confortable durant le trajet. Notre sentier le plus populaire est celui de 15 km qui vous amène au sommet d'une colline où la vue vous coupera le souffle. Rapprochez vous de la nature sauvage autant que vous le pouvez à Mont Tremblant.
+                              </p>
+                            </div>
+                </div>
+
+
+                </div>
+
+
+               
+        </div>
+
+      </section>
+      
+
+      <section id="location">
+        <h1>direction</h1>
+         <span id='directions-info'></span>
+        <div id="directions-map"></div>
+
+      </section>
+
+    
+    <section id="testimonial">
+        <h1>témoignages</h1>
+        <h2>partagez votre aventure avec le monde!</h2>
+        <div class="testimonial-container">
+          <form id="reviewForm" action="" method="post">
+
+       <input type="text" name="name" id="name" placeholder="Votre Nom" required>
+         <textarea type="text" name="review" id="review" rows="6" placeholder="Votre Témoignage" required></textarea>
+        <input type="submit" value="soumettre"required>
+      </form>
+
+        <div id="listContainer">
+        </div>
+        
+        <script src="js/select_names.js"></script>
+        </div>
+       
+      </section>
+      <footer>
+        <h2>Relier</h2>
+        <div class="icons">
+          <a href="https://www.facebook.com/tremblant/"><img src="images/fb.png" alt=""></a>
+          <a href="https://www.instagram.com/monttremblant/"><img src="images/ig.png" alt=""></a>
+          <a href="https://twitter.com/monttremblant"><img src="images/tw.png" alt=""></a>
+          <a href="https://www.youtube.com/user/MontTremblantResort"><img src="images/yt-2.png" alt=""></a>
+          <a href="tel:+18887381777">1-888-738-1777</a>
+        </div>
+        <p>&copy; 2020  Ahmad Sirawan & Alexandra Banea</p>
+      </footer>
+      
+    </div>
+
+    <script>
+      var cont = document.getElementById('fr-link');
+  cont.innerHTML = 'EN';
+
+    
+    cont.setAttribute("href", "#home");
+    
+    // 
+
+    var h = document.getElementById('h');
+    h.innerHTML = 'Accueil';
+    h.setAttribute("href", "#Home");
+
+    var about_link = document.getElementById('about-link');
+    about_link.innerHTML = 'à propos';
+
+    var activity_link = document.getElementById('activity-link');
+    activity_link.innerHTML = 'Activités';
+
+    var location_link = document.getElementById('location-link');
+    location_link.innerHTML = 'direction';
+
+    var testimonial_link = document.getElementById('testimonial-link');
+    testimonial_link.innerHTML = 'témoignages';
+
+
+    var header_h1 = document.querySelector('.header-content h1');
+    header_h1.innerHTML = 'PARC NATIONAL de Mont-Tremblant';
+
+    var header_btn = document.querySelector('.header-content a');
+    header_btn.innerHTML = 'trouve plus';
+
+    
+
+    
+    </script>
+    <script src="js/insert_name.js"></script>
+    <script src="js/home.js"></script>
+    <script async src="js/main.js"></script>
+    <script src="js/location.js"></script>
+    
+
+
+
+
+
+    
+    

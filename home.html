@@ -1,0 +1,146 @@
+
+  <div id="content">
+      
+      <section id="about">
+        <h1>ABOUT</h1>
+        <p> Mont Tremblant is a very vast green area with many lakes and streams, perfect for kayaking! You will fall in love with its wilderness, you might see a wolf wandering in the mountains. If you like climbing and hiking, this is the best spot to do so. Mont Tremblant is the largest and oldest park in Quebec. Lucky for you, the park is open year-round, so get your skis and snowboards ready for this winter. Some trails are available for anyone interested in snowshoeing.</p>
+      </section>
+      
+      <section id="activities">
+        <h1>ACTIVITIES</h1>
+        <div class="activty-container">
+          <div class="bike-container">
+                <div class="bike"><img src="images/bike.jpg" alt="Bike"></div>
+                <div class="bike-content">
+                         <button class="accordion">Biking</button>
+                            <div class="accordion-content">
+                              <p>
+                                Our biking trails offer a splendid view, where you can admire the wonderful landscape peacefully. Feeling like taking a long ride? Our trails can go up to 124 km. Feel free to take a break on the side of the road and enjoy the birds singing. The sound of nature will have you back to the park in no time!
+                              </p>
+                            </div>
+                        </div>
+                        <div class="kayak"><img src="images/wild.jpg" alt="Wildlife watching"></div>
+                <div class="kayak-content">
+                        <button class="accordion">Wildlife watching</button>
+                            <div class="accordion-content">
+                              <p>
+                                Mont Tremblant is an amazing place to do some wildlife watching. We keep our park safe, clean and it is naturally welcoming to many animals. We have managed a space for anyone who is interested in birds, wolves, and other adorable creatures that provides binoculars, an area for eating and some blankets in case you visit during chilly evenings. On weekends, we have an expert that tells us about the animals that you can see in Mont-Tremblant.
+                              </p>
+                            </div>
+                </div>
+              </div>
+
+              <div class="kayak-container">
+                <div class="kayak"><img src="images/kayak.jpg" alt="kayak"></div>
+                <div class="kayak-content">
+                        <button class="accordion">Kayaking</button>
+                            <div class="accordion-content">
+                              <p>
+                                Come explore our rivers and streams by kayaking in Mont Tremblant. Jackets are provided, as well as the rest of the equipment. We make sure to keep our waters clean and the people safe. You can choose to do kayak alone or in teams!
+                              </p>
+                            </div>
+                </div>
+
+                <div class="kayak"><img src="images/hiking-2.jpg" alt="Hiking"></div>
+                <div class="kayak-content">
+                        <button class="accordion">Hiking</button>
+                            <div class="accordion-content">
+                              <p>
+                                Hiking is a great activity to do alone or in groups. We have many trails to choose from, there are longer ones and shorter ones, you decide. Make sure you have the right shoes to stay comfortable throughout your journey. Our most popular trail is the 15 km one that gets you on top of a hill, where the view is breathtaking. Get as close as you can with the wilderness in Mont Tremblant.
+                              </p>
+                            </div>
+                </div>
+
+
+                </div>
+
+
+               
+        </div>
+
+      </section>
+      
+
+      <section id="location">
+        <h1>location</h1>
+         <span id='directions-info'></span>
+        <div id="directions-map"></div>
+
+      </section>
+
+    
+    <section id="testimonial">
+        <h1>testimonials</h1>
+        <h2>share your adventure with the world!</h2>
+        <div class="testimonial-container">
+          <form id="reviewForm" action="" method="post">
+
+       <input type="text" name="name" id="name" placeholder="Your Name" required>
+         <textarea type="text" name="review" id="review" rows="6" placeholder="Your Testimonial" required></textarea>
+        <input type="submit" value="Submit"required>
+      </form>
+
+        <div id="listContainer">
+        </div>
+        
+        <script src="js/select_names.js"></script>
+        </div>
+       
+      </section>
+      <footer>
+        <h2>Connect</h2>
+        <div class="icons">
+          <a href="https://www.facebook.com/tremblant/"><img src="images/fb.png" alt=""></a>
+          <a href="https://www.instagram.com/monttremblant/"><img src="images/ig.png" alt=""></a>
+          <a href="https://twitter.com/monttremblant"><img src="images/tw.png" alt=""></a>
+          <a href="https://www.youtube.com/user/MontTremblantResort"><img src="images/yt-2.png" alt=""></a>
+          <a href="tel:+18887381777">1-888-738-1777</a>
+        </div>
+        <p>&copy; 2020  Ahmad Sirawan & Alexandra Banea</p>
+      </footer>
+      
+    </div>
+
+    <script>
+      var cont = document.getElementById('fr-link');
+     cont.innerHTML = 'FR';
+
+    cont.setAttribute("href", "#fr");
+   
+
+    var h = document.getElementById('h');
+    h.innerHTML = 'HOME';
+    h.setAttribute('href', '#Home');
+
+    var about_link = document.getElementById('about-link');
+    about_link.innerHTML = 'about';
+
+    var activity_link = document.getElementById('activity-link');
+    activity_link.innerHTML = 'ACTIVITIES ';
+
+    var location_link = document.getElementById('location-link');
+    location_link.innerHTML = 'location';
+
+    var testimonial_link = document.getElementById('testimonial-link');
+    testimonial_link.innerHTML = 'testimonials';
+
+    var header_h1 = document.querySelector('.header-content h1');
+    header_h1.innerHTML = 'Mont-Tremblant NATIONAL PARK';
+
+    var header_btn = document.querySelector('.header-content a');
+    header_btn.innerHTML = 'Find More';
+
+    
+
+ 
+    </script>
+    <script src="js/insert_name.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/main.js"></script>
+    <script  src="js/location.js"></script>
+     
+    
+
+
+
+
